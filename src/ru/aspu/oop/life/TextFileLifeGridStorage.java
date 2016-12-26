@@ -45,6 +45,7 @@ public class TextFileLifeGridStorage implements GridStorage {
             lp = new LoopedGrid(wd, he);
             for (int i = 0; i < lp.cells.length; i++) {
                 char[] temp = br.readLine().toCharArray();
+
                 for (int j = 0; j < temp.length; j++) {
                     if (temp[j] == '@') {
                         //    System.out.print("@");
